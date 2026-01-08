@@ -1,6 +1,7 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { Poems } from '@/data/poems'
 import { searchPoems, suggestTerms } from '@/lib/search'
 import { PoemCard } from '@/components/PoemCard'
@@ -11,6 +12,7 @@ import { PoemCard } from '@/components/PoemCard'
 export function SearchBox() {
   const [q, setQ] = useState('')
   const [focused, setFocused] = useState(false)
+  const router = useRouter()
 
   const suggestions = useMemo(() => suggestTerms(q, Poems), [q])
   const results = useMemo(() => searchPoems(q, Poems), [q])
@@ -21,8 +23,22 @@ export function SearchBox() {
         <input
           value={q}
           onChange={e => setQ(e.target.value)}
+          onKeyDown={e => {
+            if (e.key === 'Enter') {
+              const n = Number(q.trim())
+              if (Number.isInteger(n) && n >= 1 && n <= Poems.length) {
+                router.push(`/poems/${n}`)
+              }
+            }
+          }}
           onFocus={() => setFocused(true)}
-          onBlur={() => setTimeout(() => setFocused(false), 100)}
+          onBlur={() => {
+            setTimeout(() => setFocused(false), 100)
+            const n = Number(q.trim())
+            if (Number.isInteger(n) && n >= 1 && n <= Poems.length) {
+              router.push(`/poems/${n}`)
+            }
+          }}
           placeholder="输入关键字（诗名 / 正文 / 描述）"
           className="w-full rounded-lg border px-4 py-3 shadow-sm"
         />
@@ -40,6 +56,22 @@ export function SearchBox() {
           </ul>
         )}
       </div>
+
+      {(() => {
+        const n = Number(q.trim())
+        const valid = Number.isInteger(n) && n >= 1 && n <= Poems.length
+        return valid ? (
+          <div className="mt-3 text-sm">
+            输入编号，已可跳转：
+            <button
+              className="ml-2 rounded border px-2 py-1 hover:bg-gray-50"
+              onClick={() => router.push(`/poems/${Number(q.trim())}`)}
+            >
+              前往第 {Number(q.trim())} 首
+            </button>
+          </div>
+        ) : null
+      })()}
 
       <div className="mt-6 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {results.map(p => (

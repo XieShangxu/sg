@@ -3,7 +3,7 @@ import { Poem } from '@/types/poem'
 export const Poems: Poem[] = [
   { number: 1, name: '诗篇第一篇', author: '', image: '/images/1.jpg', text: '', description: '' },
   { number: 2, name: '诗篇第二篇', author: '', image: '/images/2.jpg', text: '', description: '' },
-  { number: 3, name: '圣哉三一', author: '', image: '/images/3.jpg', text: '', description: '' },
+  { number: 3, name: '圣哉三一', author: '', image: '/images/3.jpg', text: '', description: '', audio: '/audios/3.mp3' },
   { number: 4, name: '荣归天父', author: '', image: '/images/4.jpg', text: '', description: '' },
   { number: 5, name: '称颂主', author: '', image: '/images/5.jpg', text: '', description: '' },
   { number: 6, name: '坚固保障', author: '', image: '/images/6.jpg', text: '', description: '' },

@@ -18,6 +18,7 @@ export default async function Page({ params }: { params: Promise<{ number: strin
         <div className="w-full">
           <img src={poem.image} alt={poem.name} className="w-full h-auto" />
         </div>
+        <p className="mt-2 text-xs text-gray-500 text-center">长按可保存图片</p>
         {poem.author && <p className="mt-2 text-sm text-gray-600">作者：{poem.author}</p>}
         {poem.audio && (
           <div className="mt-4">
