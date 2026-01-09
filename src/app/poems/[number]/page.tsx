@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import { Poems } from '@/data/poems'
 
 /**
@@ -12,9 +13,35 @@ export default async function Page({ params }: { params: Promise<{ number: strin
   const id = Number(number)
   const poem = Poems.find(p => p.number === id)
   if (!poem) return notFound()
+  const prevId = id > 1 ? id - 1 : null
+  const nextId = id < Poems.length ? id + 1 : null
   return (
     <main className="mx-auto max-w-3xl p-6">
       <article>
+        <div className="mb-2 flex items-center justify-between">
+          {prevId ? (
+            <Link
+              href={`/poems/${prevId}`}
+              aria-label="上一首"
+              className="text-xl select-none"
+            >
+              ←
+            </Link>
+          ) : (
+            <span />
+          )}
+          {nextId ? (
+            <Link
+              href={`/poems/${nextId}`}
+              aria-label="下一首"
+              className="text-xl select-none"
+            >
+              →
+            </Link>
+          ) : (
+            <span />
+          )}
+        </div>
         <div className="w-full">
           <img src={poem.image} alt={poem.name} className="w-full h-auto" />
         </div>
