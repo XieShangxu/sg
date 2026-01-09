@@ -83,7 +83,7 @@ export const Poems: Poem[] = [
   { number: 80, name: '赞主奇妙拯救', author: '', image: '/images/80.jpg', text: '', description: '' },
   { number: 81, name: '以神为乐', author: '', image: '/images/81.jpg', text: '', description: '' },
   { number: 82, name: '被杀的羔羊是配得', author: '', image: '/images/82.jpg', text: '', description: '' },
-  { number: 83, name: '赞美救主', author: '', image: '/images/83.jpg', text: '', description: '' },
+  { number: 83, name: '赞美救主', author: '', image: '/images/83.jpg', text: '', description: '', audio: '/audios/83.mp3' },
   { number: 84, name: '良友主耶稣', author: '', image: '/images/84.jpg', text: '', description: '' },
   { number: 85, name: '羔羊是配', author: '', image: '/images/85.jpg', text: '', description: '' },
   { number: 86, name: '耶稣爱我希奇', author: '', image: '/images/86.jpg', text: '', description: '' },
