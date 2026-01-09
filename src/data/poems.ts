@@ -525,7 +525,7 @@ export const Poems: Poem[] = [
   { number: 522, name: '我灵镇静', author: '', image: '/images/522.jpg', text: '', description: '' },
   { number: 523, name: '耶稣总是近', author: '', image: '/images/523.jpg', text: '', description: '' },
   { number: 524, name: '主永活在我心', author: '', image: '/images/524.jpg', text: '', description: '' },
-  { number: 525, name: '苦中近主', author: '', image: '/images/525.jpg', text: '', description: '' },
+  { number: 525, name: '苦中近主', author: '', image: '/images/525.jpg', audio: '/audios/525.mp3', text: '当我常常失败的时候，当我苦苦挣扎的时候，我想到了你。主啊！你知道我是如何的软弱而且可怜。主啊！能拯救我的只有你，求你拯救我。当我被人藐视的时候，当我被人嘲笑的时候，我想到了你。主啊！我知遭你当日受的比我更加痛苦。主啊！能安慰我的只有你，求你安慰我。当我被人撇下的时候，当我被人丢弃的时候，我想到了你。主啊！你曾说总不撇下我也不把我丢弃。主啊！能看顾我的只有你，求你看顾我。当我遇到患难的时候，当我受到打击的时候，我想到了你。主啊！我知道你加给给我的都有你的美意。主啊！能保守我的只有你，求你保守我。有谁像你那样无条件地爱怜我？有谁像我这样常常地忘记了你？主啊！是的，这一切的遭遇，为要使我格外想到你、亲近你、依靠你！', description: '' },
   { number: 526, name: '神不忘记祂的子民', author: '', image: '/images/526.jpg', text: '', description: '' },
   { number: 527, name: '十架不会重道祂恩典', author: '', image: '/images/527.jpg', text: '', description: '' },
   { number: 528, name: '有一知音', author: '', image: '/images/528.jpg', text: '', description: '' },
