@@ -54,8 +54,18 @@ export default async function Page({ params }: { params: Promise<{ number: strin
             </audio>
           </div>
         )}
-        {poem.text && <p className="mt-6 text-base text-gray-800 whitespace-pre-line">{poem.text}</p>}
-        {poem.description && <p className="mt-4 text-sm text-gray-700">{poem.description}</p>}
+        {poem.text && (
+          <div className="w-full">
+            <h3 className="text-lg font-bold text-gray-800">歌词</h3>
+            <p className="mt-6 text-base text-gray-800 whitespace-pre-line">{poem.text}</p>
+          </div>
+        )}
+        {poem.description && (
+          <div className="w-full">
+            <h3 className="text-lg font-bold text-gray-800">描述</h3>
+            <p className="mt-4 text-sm text-gray-700">{poem.description}</p>
+          </div>
+        )}
       </article>
     </main>
   )
