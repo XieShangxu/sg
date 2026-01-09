@@ -83,7 +83,7 @@ export const Poems: Poem[] = [
   { number: 80, name: '赞主奇妙拯救', author: '', image: '/images/80.jpg', text: '', description: '' },
   { number: 81, name: '以神为乐', author: '', image: '/images/81.jpg', text: '', description: '' },
   { number: 82, name: '被杀的羔羊是配得', author: '', image: '/images/82.jpg', text: '', description: '' },
-  { number: 83, name: '赞美救主', author: '', image: '/images/83.jpg', text: '', description: '', audio: '/audios/83.mp3' },
+  { number: 83, name: '赞美救主', author: '', image: '/images/83.jpg', text: '我有一位奇妙救主，祂的爱情举世莫如深海虽深，他还要深，高天虽高，他还要高亦新亦陈、又挚又真，不分境地、不理晚早祂爱我，赞美祂的名祂在天上位分至尊，天使天军无不拜顿却因情爱非常坚强，以至愿意撇弃穹苍来寻迷羊，并且受戕，舍了天福，又失世赏祂寻我，赞美祂的名祂的道路实在孤单，没有同心没有同伴祂的所有患难忧愁，惟祂自己和神知道但祂前走不稍退后，直等祂到我的囚牢祂见我，赞美祂的名不久，悲惨日子就到：祂被人卖，祂被人告祂就如此零丁孤苦，头戴荆冕，身受鞭伤为我之故，来髑髅处，忍辱受死，疼痛独当祂救我，赞美祂的名一生一世，我要述说， 祂的爱情何等超绝当我至终被提上天， 住在祂所预备的家我心所羡， 是见祂面，我要高唱哈利路亚我爱祂，赞美祂的名', description: '', audio: '/audios/83.mp3' },
   { number: 84, name: '良友主耶稣', author: '', image: '/images/84.jpg', text: '', description: '' },
   { number: 85, name: '羔羊是配', author: '', image: '/images/85.jpg', text: '', description: '' },
   { number: 86, name: '耶稣爱我希奇', author: '', image: '/images/86.jpg', text: '', description: '' },
