@@ -41,8 +41,20 @@ export function PoemCard({ poem, variant = 'list', query }: { poem: Poem; varian
           <img src={poem.image} alt={poem.name} className="h-full w-full object-cover" />
         </div>
         <div className="p-3">
-          <h3 className="text-base font-semibold tracking-tight">
-            {poem.number}. {poem.name}
+          <h3 className="text-base font-semibold tracking-tight flex items-center gap-1">
+            <span>
+              {poem.number}. {poem.name}
+            </span>
+            {poem.audio && (
+              <span className="ml-1 text-blue-600" aria-label="支持音频">
+                {/* music note icon */}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M9 19V5l10-2v12"/>
+                  <circle cx="7" cy="19" r="3"/>
+                  <circle cx="19" cy="15" r="3"/>
+                </svg>
+              </span>
+            )}
           </h3>
           <p className="mt-2 text-sm text-gray-700 line-clamp-3">
             {variant === 'search' && q ? renderHighlightedSnippet(text || poem.description || '', q) : (text || poem.description || '')}
