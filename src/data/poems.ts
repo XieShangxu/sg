@@ -815,7 +815,8 @@ export const Poems: Poem[] = [
     name: "甘心为我们被杀",
     author: "",
     image: "/images/100.jpg",
-    text: "",
+    audio: "/audios/100.mp3",
+    text: "为什么不说一句话，背负着沉重十架？一步步走向各各他，甘心为我们被杀。哦！耶稣，亲爱的耶稣，哦！耶稣，受苦的耶稣，为什么仍不说一句话，甘心为我们被杀？",
     description: "",
   },
   {
