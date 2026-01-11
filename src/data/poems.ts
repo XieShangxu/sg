@@ -217,7 +217,7 @@ export const Poems: Poem[] = [
     name: "众神之中谁能像你",
     author: "",
     image: "/images/25.jpg",
-    text: "",
+    text: "耶和华啊众神之中谁能像你谁能像你至圣至荣可颂 可畏 施行奇事",
     description: "",
   },
   {
